@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Aeesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Commerce?style=social" alt="GitHub stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Commerce?style=social" alt="GitHub_Stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Embedded-Commerce?style=social" alt="GitHub forks"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg" alt="Awesome List"></a>
@@ -75,9 +75,9 @@ The table below catalogs premier hosted embedded commerce providers, sorted desc
 
 Explore battle-tested open-source repositories powering embedded checkout flows, headless ecommerce backends, digital download micro-stores, and decentralized crypto gateways.
 
-Sorted descending by GitHub star count:
+Sorted descending by GitHub Stars_Count:
 
-| Repository | GitHub Stars | Primary Stack | Architecture & Capabilities |
+| Repository | GitHub_Stars | Primary Stack | Architecture & Capabilities |
 | :--- | :--- | :--- | :--- |
 | **[Hyperswitch](https://github.com/juspay/hyperswitch)** | [![Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) | Rust | High-performance open-source universal payments switch and embedded web/mobile checkout SDK. Connects to 50+ payment processors via a single unified API to reduce fees and boost conversion. |
 | **[Medusa](https://github.com/medusajs/medusa)** | [![Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers) | TypeScript / Node.js | Modular headless commerce engine (often called the open-source Shopify alternative). Delivers rich REST/GraphQL APIs, cart primitives, multi-region currencies, and checkout modules for custom frontend embeds. |
@@ -161,7 +161,7 @@ Contributions are welcome! Please follow these guidelines:
 
 1. Fork this repository.
 2. Ensure new SaaS additions include verifiable starting tier pricing and specific free trial terms.
-3. Ensure new open-source additions include active GitHub repositories and accurate star counts.
+3. Ensure new open-source additions include active GitHub repositories and accurate Stars_Counts.
 4. Add your entry to the appropriate table and submit a Pull Request with a clear description.
 
 ---
