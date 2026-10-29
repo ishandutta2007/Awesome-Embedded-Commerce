@@ -1,54 +1,58 @@
-# Awesome Embedded Commerce [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 🛒 Awesome Embedded Commerce [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p align="center">
   <img src="./assets/embedded-commerce-banner.svg" alt="Awesome Embedded Commerce Banner" width="100%">
 </p>
 
 <p align="center">
-  <strong>Curated directory of SaaS platforms, embeddable checkout APIs, buy button widgets, and self-hosted open-source commerce engines.</strong>
+  <strong>⚡ Curated directory of SaaS platforms, embeddable checkout APIs, buy button widgets, and self-hosted open-source commerce engines. 🚀</strong>
 </p>
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Aeesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Embedded-Commerce?style=social" alt="GitHub stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Embedded-Commerce?style=social" alt="GitHub forks"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Embedded-Commerce/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="https://github.com/sindresorhus/awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg" alt="Awesome List"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-Ecosystem-ff69b4.svg" alt="Awesome List"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 ---
 
-**Embedded commerce** allows creators, software developers, publishers, and digital platforms to sell physical goods, software licenses, subscriptions, and digital downloads directly within any website, mobile app, or content stream—without deploying a traditional monolithic storefront.
+💡 **Embedded commerce** allows creators, software developers, publishers, and digital platforms to sell physical goods, software licenses, subscriptions, and digital downloads directly within any website, mobile app, or content stream—without deploying a traditional monolithic storefront.
 
-Whether you need a **drop-in JavaScript buy button**, a **hosted checkout link**, a **Merchant of Record (MoR)** for global tax/VAT compliance, or a **fully self-hosted headless backend**, this guide tracks the leading production-ready commercial solutions and open-source GitHub alternatives.
-
----
-
-## Table of Contents
-
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Hosted Platforms](#saashosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-  - [Open-Source Checkout & Commerce Engines](#open-source-checkout--commerce-engines)
-  - [Open-Source Digital Product & Micro-Stores](#open-source-digital-product--micro-stores)
-  - [Crypto-Native & Decentralized Checkout](#crypto-native--decentralized-checkout)
-- [Architectural Comparison: SaaS vs Open Source](#architectural-comparison-saas-vs-open-source)
-- [How to Choose the Right Solution](#how-to-choose-the-right-solution)
-- [How to Contribute](#how-to-contribute)
-- [License](#license)
+Whether you need a **drop-in JavaScript buy button** 🔘, a **hosted checkout link** 🔗, a **Merchant of Record (MoR)** 🌐 for global tax/VAT compliance, or a **fully self-hosted headless backend** 🛠️, this guide tracks the leading production-ready commercial solutions and open-source GitHub alternatives.
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📑 Table of Contents
 
-The global embedded commerce and embedded finance market was valued at approximately **$83.4 billion in 2025** and is projected to expand past **$380 billion by 2032**, recording a compound annual growth rate (CAGR) of over **24.5%**. 
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [⚙️ Open-Source Checkout & Commerce Engines](#️-open-source-checkout--commerce-engines)
+  - [📦 Open-Source Digital Product & Micro-Stores](#-open-source-digital-product--micro-stores)
+  - [⚡ Crypto-Native & Decentralized Checkout](#-crypto-native--decentralized-checkout)
+- [🏛️ Architectural Comparison: SaaS vs Open Source](#️-architectural-comparison-saas-vs-open-source)
+- [🧭 How to Choose the Right Solution](#-how-to-choose-the-right-solution)
+- [🌟 Star History](#-star-history)
+- [💖 Support](#-support)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [📄 License](#-license)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+📈 The global embedded commerce and embedded finance market was valued at approximately **$83.4 billion in 2025** and is projected to expand past **$380 billion by 2032**, recording a compound annual growth rate (CAGR) of over **24.5%**. 
 
 Market dynamics reflect a **moderately fragmented ecosystem transitioning toward barbell concentration**:
-- At the enterprise and hyper-scale tier, **winner-take-most infrastructure giants** like Stripe, Square (Block), and Shopify dominate underlying payment rails, checkout processing, and omnichannel APIs.
-- Concurrently, high geographic fragmentation, complex cross-border sales tax/VAT liabilities, and merchant-of-record friction have created thriving spaces for **specialized agile platforms** (e.g., Lemon Squeezy, Paddle, Snipcart, Ecwid) and indie-centric open-source engines catering to digital product developers and decentralized payments.
+- 🏢 At the enterprise and hyper-scale tier, **winner-take-most infrastructure giants** like Stripe, Square (Block), and Shopify dominate underlying payment rails, checkout processing, and omnichannel APIs.
+- 🌍 Concurrently, high geographic fragmentation, complex cross-border sales tax/VAT liabilities, and merchant-of-record friction have created thriving spaces for **specialized agile platforms** (e.g., Lemon Squeezy, Paddle, Snipcart, Ecwid) and indie-centric open-source engines catering to digital product developers and decentralized payments.
 
 ---
 
-## SaaS/Hosted Platforms
+## ☁️ SaaS & Hosted Platforms
 
 The table below catalogs premier hosted embedded commerce providers, sorted descending by enterprise scale (valuation / annual revenue).
 
@@ -67,7 +71,7 @@ The table below catalogs premier hosted embedded commerce providers, sorted desc
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Explore battle-tested open-source repositories powering embedded checkout flows, headless ecommerce backends, digital download micro-stores, and decentralized crypto gateways.
 
@@ -96,7 +100,7 @@ Sorted descending by GitHub star count:
 
 ---
 
-## Architectural Comparison: SaaS vs Open Source
+## 🏛️ Architectural Comparison: SaaS vs Open Source
 
 ```
 +-----------------------------------------------------------------------------------+
@@ -123,17 +127,35 @@ Sorted descending by GitHub star count:
 
 ---
 
-## How to Choose the Right Solution
+## 🧭 How to Choose the Right Solution
 
-1. **For zero maintenance and fastest time to market**: Choose **Stripe Payment Links** or **Shopify Buy Button**. You obtain instant cross-device checkout with one link or tag.
-2. **For selling digital goods with automated worldwide VAT handling**: Choose a **Merchant of Record** such as **Lemon Squeezy** or **Paddle**. They assume legal liability and remit sales tax on your behalf.
-3. **For static sites (SSG), Jamstack, or custom blogs**: Choose **Snipcart** or **Polar** to preserve your design freedom without spinning up databases.
-4. **For zero transaction fees and data sovereignty**: Self-host **Paymug**, **Medusa**, or **Hyperswitch** backed by your own Stripe, PayPal, or localized payment gateway account.
-5. **For Bitcoin or stablecoin payments**: Deploy **BTCPay Server**, **LNbits WebShop**, or **Zoneless** for trustless settlement.
+1. ⚡ **For zero maintenance and fastest time to market**: Choose **Stripe Payment Links** or **Shopify Buy Button**. You obtain instant cross-device checkout with one link or tag.
+2. 🌍 **For selling digital goods with automated worldwide VAT handling**: Choose a **Merchant of Record** such as **Lemon Squeezy** or **Paddle**. They assume legal liability and remit sales tax on your behalf.
+3. 🎨 **For static sites (SSG), Jamstack, or custom blogs**: Choose **Snipcart** or **Polar** to preserve your design freedom without spinning up databases.
+4. 🔓 **For zero transaction fees and data sovereignty**: Self-host **Paymug**, **Medusa**, or **Hyperswitch** backed by your own Stripe, PayPal, or localized payment gateway account.
+5. 🪙 **For Bitcoin or stablecoin payments**: Deploy **BTCPay Server**, **LNbits WebShop**, or **Zoneless** for trustless settlement.
 
 ---
 
-## How to Contribute
+## 🌟 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Embedded-Commerce&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Embedded-Commerce&type=date&legend=top-left)
+
+---
+
+## 💖 Support
+
+A massive **thank you** 🙏 to all developers, builders, and community supporters who use and contribute to this directory!
+
+If you find this list helpful, please consider supporting the project:
+- ⭐ **Star** this repository on GitHub to help others discover it.
+- 🍴 **Fork** and share it with fellow developers and indie hackers.
+- 📢 **Share** your feedback, suggest new tools, or submit a PR.
+- ☕ **Buy me a coffee**: Support ongoing curation and maintenance via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 🤝 How to Contribute
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -144,6 +166,6 @@ Contributions are welcome! Please follow these guidelines:
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
