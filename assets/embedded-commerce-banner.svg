@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#090d16; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; overflow:hidden;">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0e172a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Glowing Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.5"/>
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Embedded Dynamic Animations -->
+    <style>
+      @keyframes floatLeftRight {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(25px); }
+        100% { transform: translateX(0px); }
+      }
+      @keyframes floatRightLeft {
+        0% { transform: translateX(0px); }
+        50% { transform: translateX(-25px); }
+        100% { transform: translateX(0px); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.7; transform: scale(1.08); }
+      }
+      @keyframes flowData {
+        0% { stroke-dashoffset: 120; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes pillBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
+      }
+
+      .floating-bg-1 {
+        animation: floatLeftRight 10s ease-in-out infinite;
+      }
+      .floating-bg-2 {
+        animation: floatRightLeft 12s ease-in-out infinite;
+      }
+      .glowing-orb {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .flow-path {
+        stroke-dasharray: 8, 8;
+        animation: flowData 2.5s linear infinite;
+      }
+      .pill-anim-1 {
+        animation: pillBounce 4s ease-in-out infinite;
+      }
+      .pill-anim-2 {
+        animation: pillBounce 4s ease-in-out infinite 1s;
+      }
+      .pill-anim-3 {
+        animation: pillBounce 4s ease-in-out infinite 2s;
+      }
+      .pill-anim-4 {
+        animation: pillBounce 4s ease-in-out infinite 3s;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="360" fill="url(#bgGrad)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+  <!-- Dynamic Animated Background Orbs / Glows (strictly background depth) -->
+  <circle class="glowing-orb" cx="150" cy="80" r="140" fill="#38bdf8" opacity="0.15" filter="url(#glow)"/>
+  <circle class="glowing-orb" cx="1050" cy="280" r="160" fill="#8b5cf6" opacity="0.18" filter="url(#glow)"/>
+  <circle class="glowing-orb" cx="600" cy="380" r="180" fill="#06b6d4" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Dynamic Tech Geometric Circuit Lines (Background) -->
+  <g opacity="0.45" stroke="#38bdf8" stroke-width="1.5" fill="none">
+    <path class="flow-path" d="M 60 40 L 220 40 L 270 90 L 400 90"/>
+    <circle cx="60" cy="40" r="3.5" fill="#38bdf8"/>
+    <circle cx="400" cy="90" r="3.5" fill="#38bdf8"/>
+    <path class="flow-path" d="M 800 270 L 920 270 L 970 320 L 1140 320" stroke="#8b5cf6"/>
+    <circle cx="800" cy="270" r="3.5" fill="#8b5cf6"/>
+    <circle cx="1140" cy="320" r="3.5" fill="#8b5cf6"/>
+  </g>
+
+  <!-- Dynamic Interactive Visual Cards & Pills (Floated side elements) -->
+  <!-- Top Right Dynamic Pill -->
+  <g class="pill-anim-1 floating-bg-2" transform="translate(860, 42)">
+    <rect width="280" height="42" rx="21" fill="url(#cardGrad1)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="24" cy="21" r="7" fill="#10b981"/>
+    <circle cx="24" cy="21" r="11" fill="#10b981" opacity="0.25" class="glowing-orb"/>
+    <text x="42" y="26" fill="#e2e8f0" font-size="13" font-weight="600" letter-spacing="0.5">Embeddable Checkout APIs</text>
+  </g>
+
+  <!-- Bottom Left Dynamic Pill -->
+  <g class="pill-anim-3 floating-bg-1" transform="translate(60, 280)">
+    <rect width="240" height="40" rx="20" fill="url(#cardGrad1)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="22" cy="20" r="6" fill="#6366f1"/>
+    <text x="38" y="25" fill="#cbd5e1" font-size="13" font-weight="600">Buy Buttons &amp; Overlays</text>
+  </g>
+
+  <!-- Bottom Right Dynamic Pill -->
+  <g class="pill-anim-2 floating-bg-2" transform="translate(900, 275)">
+    <rect width="240" height="40" rx="20" fill="url(#cardGrad1)" stroke="#10b981" stroke-width="1.2" stroke-opacity="0.4"/>
+    <circle cx="22" cy="20" r="6" fill="#10b981"/>
+    <text x="38" y="25" fill="#cbd5e1" font-size="13" font-weight="600">SaaS &amp; Self-Hosted FOSS</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Header, Title, Subtitle, Key Meta Badges (Guaranteed crisp foreground readability) -->
+  
+  <!-- Category Meta Badge -->
+  <g transform="translate(435, 45)">
+    <rect width="330" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+    <circle cx="16" cy="14" r="4" fill="#38bdf8"/>
+    <text x="28" y="19" fill="#94a3b8" font-size="12" font-weight="600" letter-spacing="1">CURATED DEVELOPER DIRECTORY</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <text x="600" y="145" text-anchor="middle" fill="url(#primaryGrad)" font-size="44" font-weight="800" letter-spacing="-0.5">
+    Awesome Embedded Commerce
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="190" text-anchor="middle" fill="#94a3b8" font-size="17" font-weight="400" letter-spacing="0.2">
+    Top Platforms, Checkout APIs, Embeddable Buy Buttons &amp; Self-Hosted Open-Source Systems
+  </text>
+
+  <!-- Feature Pill Tags in Foreground Center -->
+  <g transform="translate(300, 222)">
+    <!-- Pill 1: Hosted Checkout -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="65" y="20" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">Hosted Checkout</text>
+    </g>
+
+    <!-- Pill 2: One-Line JS Buttons -->
+    <g transform="translate(145, 0)">
+      <rect width="145" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="72" y="20" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">Embeddable Buttons</text>
+    </g>
+
+    <!-- Pill 3: Headless Cart APIs -->
+    <g transform="translate(305, 0)">
+      <rect width="140" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="70" y="20" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">Headless Engines</text>
+    </g>
+
+    <!-- Pill 4: Webhooks &amp; MoR -->
+    <g transform="translate(460, 0)">
+      <rect width="140" height="30" rx="15" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+      <text x="70" y="20" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="500">Merchant of Record</text>
+    </g>
+  </g>
+</svg>
